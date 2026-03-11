@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/layout/Sidebar';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <div className="h-screen bg-slate-900 flex items-center justify-center">
-      <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-        Tailwind is Alive! 🚀
-      </h1>
+    <div className="min-h-screen bg-slate-50 flex">
+      <Sidebar />
+      <main className="flex-1 ml-64 min-h-screen">
+        <Dashboard />
+      </main>
     </div>
   );
 }
